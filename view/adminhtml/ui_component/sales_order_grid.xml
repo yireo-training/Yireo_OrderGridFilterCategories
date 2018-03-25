@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="sales_order_columns">
+        <column name="category" class="Yireo\OrderGridFilterCategories\Ui\Component\Listing\Column\Category">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="label" xsi:type="string" translate="true">Products</item>
+                </item>
+            </argument>
+            <settings>
+                <filter>select</filter>
+                <options class="Yireo\OrderGridFilterCategories\Ui\Component\Listing\Column\Category\Options" />
+                <dataType>select</dataType>
+                <label translate="true">Product Category</label>
+                <visible>true</visible>
+            </settings>
+        </column>
+    </columns>
+</listing>
